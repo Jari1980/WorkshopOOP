@@ -18,7 +18,8 @@ public class Book {
 
     public Book(String title, String author, Person borrower) {
         this(title, author);
-        this.setBorrower(borrower);
+        borrower.loanBook(this);
+        //this.setBorrower(borrower);
     }
 
     public String getBookInformation() {

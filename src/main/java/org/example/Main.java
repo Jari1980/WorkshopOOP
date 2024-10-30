@@ -43,5 +43,11 @@ public class Main {
         person1.borrowedBooks();
         System.out.println("-----------------");
         System.out.println(person1.getPersonInformation());
+        System.out.println("----------");
+        person1.borrowedBooks();
+        System.out.println("----------------");
+        Book book6 = new Book("test", "testtest", person1);
+        System.out.println("-----");
+        person1.borrowedBooks();
     }
 }
