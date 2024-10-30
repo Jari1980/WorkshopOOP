@@ -7,7 +7,7 @@ public class Book {
     private String title;
     private String author;
     private boolean available = true;
-    private Person borrower;     //Object of the person who borrowed the book
+    private Person borrower;     //Person who borrowed the book
 
     //Constructor
     public Book(String title, String author) {
@@ -18,7 +18,8 @@ public class Book {
 
     public Book(String title, String author, Person borrower) {
         this(title, author);
-        this.setBorrower(borrower);
+        borrower.loanBook(this);
+        //this.setBorrower(borrower);
     }
 
     public String getBookInformation() {
